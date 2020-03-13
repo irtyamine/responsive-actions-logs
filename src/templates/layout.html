@@ -1,0 +1,35 @@
+{% import "macros/_site.njk" as site %}
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-6548d5a1dd84bd83036c6a914b25b4ae.css" />
+  <link rel="stylesheet" href="https://github.githubassets.com/assets/github-6960adfc0d6a085147bff50a0684bd8c.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="viewport" content="width=device-width">
+
+  <style type="text/css">
+  form { margin-block-end: 0; }
+
+  /* DEVNOTE: make these changes in our css */
+  .CheckStep-line {
+    margin-left: -18px;
+  }
+  .CheckStep .CheckStep-line-number {
+    width: 50px;
+  }
+  </style>
+</head>
+
+<!-- DEVNOTE: Removed .min-width-lg here -->
+<body class="logged-in env-production min-height-full d-flex flex-column full-width full-width-p-0 intent-mouse page-responsive">
+
+  {% include 'partials/site-header.html' %}
+
+  {% block content %}
+  {% endblock %}
+
+  {# include 'partials/javascripts.html' #}
+
+</body>
+</html>

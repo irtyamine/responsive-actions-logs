@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="application-main d-flex flex-auto flex-column" data-commit-hovercards-enabled="">
+  <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="d-flex flex-auto overflow-hidden">
+<main class="d-flex flex-column flex-auto overflow-hidden">
+
+
+  {% include 'partials/repohead.html' %}
+
+
+<div class="container-xl clearfix new-discussion-timeline d-flex flex-column flex-auto p-0">
+<div class="repository-content d-flex flex-auto">
+
+
+<div class="d-flex flex-column width-full">
+
+
+<div class="d-flex flex-column width-full flex-auto">
+
+  {% include 'partials/log-header.html' %}
+  {% include 'partials/log-wrapper.html' %}
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+</main>
+</div>
+<div hidden="">
+<button type="button" class="js-konami js-pjax-capture-input" data-pjax="" data-return-to="/jasonlong/mater/workspace/master" data-hotkey="ArrowUp ArrowUp ArrowDown ArrowDown ArrowLeft ArrowRight">Konami</button>
+</div>
+
+
+</div>
+
+{% endblock content %}
